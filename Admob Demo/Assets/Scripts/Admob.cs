@@ -20,7 +20,9 @@ public class Admob : MonoBehaviour
     private bool isBannerLoaded = false;
     private bool isRewardEarned = false;
 
+    private bool[] IsInterstitialsLoaded = new bool[5];
 
+    private InterstitialAd[] InterstitialAds;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,8 @@ public class Admob : MonoBehaviour
         }
 
         MobileAds.Initialize(initStatus => { });
+
+        InterstitialAds = new InterstitialAd[5];
 
         RequestInterstitial();
         RequestRewardedAd();
@@ -65,6 +69,28 @@ public class Admob : MonoBehaviour
     #endregion
 
     #region Private Functions
+    private void InitInterstitials()
+    {
+        for(int i=0;i<InterstitialAds.Length;i++)
+        {
+            InterstitialAds[i] = new InterstitialAd(InterstitialID);
+            InterstitialAds[i].OnAdClosed += Interstitial_OnAdClosed;
+            InterstitialAds[i].OnAdLoaded += Admob_OnAdLoaded;
+            AdRequest request = new AdRequest.Builder().Build();
+            Interstitial.LoadAd(request);
+        }
+    }
+
+    private void Admob_OnAdLoaded(object sender, System.EventArgs e)
+    {
+        for (int i = 0; i < InterstitialAds.Length; i++)
+        {
+           if( sender.Equals(InterstitialAds[0]))
+            {
+                IsInterstitialsLoaded
+            }
+        }
+    }
 
     private void RequestBanner()
     {

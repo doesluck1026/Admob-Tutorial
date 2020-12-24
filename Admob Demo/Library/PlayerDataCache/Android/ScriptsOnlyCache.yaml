@@ -4,14 +4,10 @@ ScriptsOnlyBuild:
     - Admob
     GoogleMobileAds.Editor.dll:
     - GoogleMobileAds.Editor.GoogleMobileAdsSettings
-    GoogleMobileAds.dll:
-    - GoogleMobileAds.Common.MobileAdsEventExecutor
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -47,23 +43,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11726}
+      Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 12032}
+      Script: {instanceID: 12210}
     - Class: 114
-      Script: {instanceID: 12086}
+      Script: {instanceID: 12268}
     - Class: 114
-      Script: {instanceID: 12790}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13564}
+      Script: {instanceID: 13584}
     - Class: 114
-      Script: {instanceID: 14380}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 15014}
+      Script: {instanceID: 13876}
     - Class: 114
-      Script: {instanceID: 21900}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 22470}
+      Script: {instanceID: 15454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -329,6 +325,12 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
+      Hash: b63bf4a52204f1e3f8cad0a231f3cc56
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Admob
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -339,6 +341,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 6fb512c6733e02f441372611e6f94f11
+    assemblyName: GoogleMobileAds.Editor.dll
+    namespaceName: GoogleMobileAds.Editor
+    className: GoogleMobileAdsSettings
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -423,6 +431,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.dll
+    namespaceName: GoogleMobileAds.Common
+    className: MobileAdsEventExecutor
   - hash:
       serializedVersion: 2
       Hash: e4aac510b698bae77a5dbde189fe88e5
@@ -555,24 +569,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 6fb512c6733e02f441372611e6f94f11
-    assemblyName: GoogleMobileAds.Editor.dll
-    namespaceName: GoogleMobileAds.Editor
-    className: GoogleMobileAdsSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GoogleMobileAds.dll
-    namespaceName: GoogleMobileAds.Common
-    className: MobileAdsEventExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: b63bf4a52204f1e3f8cad0a231f3cc56
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Admob
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

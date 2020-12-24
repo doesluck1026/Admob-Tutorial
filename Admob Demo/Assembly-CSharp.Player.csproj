@@ -268,6 +268,9 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="GoogleMobileAds.Editor">
+      <HintPath>Library\ScriptAssemblies\GoogleMobileAds.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
@@ -285,9 +288,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="GoogleMobileAds.Editor">
-      <HintPath>Library\ScriptAssemblies\GoogleMobileAds.Editor.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\2020.1.0b9\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -652,6 +652,10 @@
       <Project>{D8C1CFED-25AD-3F76-8478-7DD0E16F6E36}</Project>
       <Name>Unity.2D.Animation.Triangle.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="GoogleMobileAds.csproj">
+      <Project>{A950EB93-1BC1-9B7F-B521-D7D5D01E4414}</Project>
+      <Name>GoogleMobileAds</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{4344A9B8-3E8A-9206-8CBF-0FC9224D1F16}</Project>
       <Name>Unity.Mathematics</Name>
@@ -675,10 +679,6 @@
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{E7CB6BD4-5AE6-0B91-F638-7FAABF824644}</Project>
       <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.csproj">
-      <Project>{A950EB93-1BC1-9B7F-B521-D7D5D01E4414}</Project>
-      <Name>GoogleMobileAds</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
